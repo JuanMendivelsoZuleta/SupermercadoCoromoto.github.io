@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header a{
+    position: fixed;
+    left: 20px; /*lo ubica en la esquina superior izquierda con un pequeño margen. */
+    top: 20px; /*lo ubica en la esquina superior izquierda con un pequeño margen. */
+    background-color: #1f53c5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: #193ea3;
+  }
+
+
+body {
+    background-color: #1f54c56e ;
+    height: 100vh; /* Altura total de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius:4px ;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover{ /*Crea un puntero cuando se pase el cursor */
+    color: rgb(25, 121, 165);
+    text-decoration: underline;
+}
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color:white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}

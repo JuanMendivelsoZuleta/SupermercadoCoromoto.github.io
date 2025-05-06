@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verduras</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/4ed7a0ea78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/imagenes/coromoto-removebg-preview.png" width="140" height="100" alt="logo"></a>
+            <figcaption>Supermercado <br> Coromoto</figcaption>
+        </div>
+        <div class="container">
+            <form>
+                <input type="text" placeholder="¿Que estas buscando?...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <div class="botonuser">
+            <a href="/html/register.html"><button><i class="fa-solid fa-user"></i></button></a>
+            <button id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-item-count"></span>
+            </button>
+            <a href="#"><button><i class="fa-solid fa-right-to-bracket"></i></button></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="/index.html">Inicio</a></li>
+            <li>
+                <a href="#">Categorias</a>
+                <ul class="menu-vertical">
+                    <li><a href="/html/granos.html">Granos</a></li>
+                    <li><a href="/html/verduras.html">Verduras</a></li>
+                    <li><a href="/html/congelados.html">Congelados</a></li>
+                    <li><a href="/html/licores.html">Licores</a></li>
+                </ul>
+            </li>
+            <li><a href="/html/contacto.html" target="_blank">Contactanos</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="cart">
+        <h2 class="cart-title">Tu carrito</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="imagenes/avena.png" class="cart-img">
+                <div class="cart-detail">
+                <h2 class="cart-product-title">Avena</h2>
+                <span class="cart-price">$2000</span>
+                <div class="cart-quantity">
+                    <button id="decrement">-</button>
+                    <span class="number">1</span>
+                    <button id="increment">+</button>
+                </div>
+                </div>
+                <i class="ri-delete-bin-line cart-remove"></i>
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Comprar ahora</button>
+        <i class="ri-close-line" id="cart-close"></i>
+        </div>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=1234567891&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float "></i>
+        </a>
+
+    <section>
+        <h2>VERDURAS</h2>
+        <div class="product-abarrote">
+            <div class="product-box">
+                <img src="/Verduras/Brocoli.png" alt="Brócoli">
+                <h3 class="product-title">Brócoli</h3>
+                <p class="price">$10000</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="/Verduras/cebolla.png" alt="Cebolla">
+                <h3 class="product-title">Cebolla</h3>
+                <p class="price">$4500</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="/Verduras/elote.png" alt="Maíz">
+                <h3 class="product-title">Maíz</h3>
+                <p class="price">$4000</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="/Verduras/papa.png" alt="Papa">
+                <h3 class="product-title">Papa</h3>
+                <p class="price">$1800</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="/Verduras/Tomate.png" alt="Tomate">
+                <h3 class="product-title">Tomate</h3>
+                <p class="price">$3000</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="/Verduras/zanahoria.png" alt="Zanahoria">
+                <h3 class="product-title">Zanahoria</h3>
+                <p class="price">$1200</p>
+                <div class="precio">
+                    <button class="add-cart">Comprar</button>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <a href="https://maps.app.goo.gl/No8SVMXGehRu1QX79" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            </div>
+        <div class="copy">
+            <p>&copy; Supermercado Coromoto</p>
+        </div>
+    </footer>
+    <script src="/script.js" defer></script>
+</body>
+</html>
