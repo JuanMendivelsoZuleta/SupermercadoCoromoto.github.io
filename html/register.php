@@ -11,14 +11,19 @@
         <a href="/coromotosuper/index.php">Volver al inicio </a>
     </header>
     <section class="form-register">
+        <form action="" method="post">
         <h4>Formulario Registro</h4>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        <input class="controls" type="text" name="appelidos" id="appelidos" placeholder="Ingrese su Apellido">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+        <input class="controls" type="text" name="username" id="username" placeholder="Ingrese su Nombre de Usuario">
+        <input class="controls" type="email" name="email" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
         <p> Estoy de acuerdo con <a href="#">Terminos y condiciones </a></p>
-        <input class="botons" type="submit" value="Registrar">
+        <input class="botons" type="submit" name="register" value="Registrar">
         <p><a href="/coromotosuper/html/login.html"> ¿Ya tengo cuenta? </a></p>
+        </form>
+
+        <?php 
+        include("registrar.php");
+        ?>
     </section>
 </body>
 </html>

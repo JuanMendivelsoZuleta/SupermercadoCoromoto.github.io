@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin'])) {
+    // El usuario ya ha iniciado sesión, puedes redirigirlo a la página de inicio
+    header('Location: /coromotosuper/html/login.html');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,12 +32,15 @@
             </form>
         </div>
         <div class="botonuser">
-            <a href="html/register.html"><button><i class="fa-solid fa-user"></i></button></a>
+            <div class="content" style= "font-size: 1rem;">
+        
+                <p> <?= $_SESSION['name'] ?></p>
+            </div>
             <button id="cart-icon">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span class="cart-item-count"></span>
             </button>
-            <a href="#"><button><i class="fa-solid fa-right-to-bracket"></i></button></a>
+            <a href="html/cerrar-sesion.php"><button><i class="fa-solid fa-right-to-bracket"></i></button></a>
         </div>
     </header>
     <nav>

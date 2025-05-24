@@ -11,12 +11,18 @@
             <a href="/coromotosuper/index.php">Volver al inicio </a>
     </header>
     <section class="form-login">
+        <form action="/coromotosuper/html/autenticacion.php" method="POST">
         <h4>Inicio Sesion </h4>
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
+        <input class="controls" type="text" name="username" id="username"
+         placeholder="Ingrese su username" required>
+
+        <input class="controls" type="password" name="password" id="password" 
+        placeholder="Ingrese su Contraseña" required>
+
         <p> Estoy de acuerdo con <a href="#">Terminos y condiciones </a></p>
+        <p><a href="/coromotosuper/html/register.php"> No tengo cuenta </a></p>
         <input class="botons" type="submit" value="iniciar">
-        <p><a href="/coromotosuper/html/register.html"> No tengo cuenta </a></p>
+        </form>
     </section>
 </body>
 </html>
