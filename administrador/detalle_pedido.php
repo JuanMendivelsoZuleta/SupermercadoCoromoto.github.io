@@ -22,14 +22,14 @@ $stmt->execute([$id]);
 $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
+
+
+
   <meta charset="UTF-8">
   <title>Detalle del Pedido</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
+
+
   <h2 class="text-primary mb-4">🧾 Detalle del Pedido #<?= $orden['id'] ?></h2>
   <p><strong>Cliente:</strong> <?= htmlspecialchars($orden['cliente_nombre']) ?></p>
   <p><strong>Teléfono:</strong> <?= $orden['cliente_telefono'] ?></p>
@@ -66,9 +66,3 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
       </tr>
     </tfoot>
   </table>
-
-  <div class="text-end">
-    <a href="ver_pedidos.php" class="btn btn-secondary">🔙 Volver</a>
-  </div>
-</body>
-</html>

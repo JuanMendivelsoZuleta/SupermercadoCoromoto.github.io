@@ -37,14 +37,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
+
+
+
   <meta charset="UTF-8">
   <title>Editar Producto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
+
+
   <h2 class="text-primary text-center mb-4">Editar Producto</h2>
   <form action="" method="POST" enctype="multipart/form-data" class="row g-3">
     <div class="col-md-6"><label class="form-label">Nombre:</label><input type="text" name="nombre" class="form-control" value="<?= $producto['nombre'] ?>" required></div>
@@ -71,5 +71,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <a href="listar_productos.php" class="btn btn-secondary">Cancelar</a>
     </div>
   </form>
-</body>
-</html>

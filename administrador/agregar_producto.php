@@ -3,14 +3,14 @@ include('db.php');
 $stmt = $pdo->query("SELECT DISTINCT categoria FROM productos");
 $categorias = $stmt->fetchAll(PDO::FETCH_COLUMN);
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
+
+
+
   <meta charset="UTF-8">
   <title>Agregar Producto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
+
+
   <h2 class="text-primary text-center mb-4">Agregar Nuevo Producto</h2>
   <form action="guardar_producto.php" method="POST" enctype="multipart/form-data" class="row g-3">
     <div class="col-md-6"><label class="form-label">Nombre:</label><input type="text" name="nombre" class="form-control" required></div>
@@ -35,5 +35,3 @@ $categorias = $stmt->fetchAll(PDO::FETCH_COLUMN);
       <a href="listar_productos.php" class="btn btn-secondary">Volver</a>
     </div>
   </form>
-</body>
-</html>

@@ -12,14 +12,14 @@ if ($filtro) {
 }
 $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
-<html>
-<head>
+
+
+
   <meta charset="UTF-8">
   <title>Productos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
+
+
   <h1 class="text-center text-primary mb-4">Inventario de Productos</h1>
   <form class="row mb-4" method="GET">
     <div class="col-md-4 offset-md-4">
@@ -32,7 +32,7 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
   </form>
   <div class="mb-3 text-end">
-    <a href="agregar_producto.php" class="btn btn-success">➕ Agregar nuevo producto</a>
+    <button class="btn btn-success" onclick="loadContent('agregar_producto.php')">➕ Agregar nuevo producto</button>
   </div>
   <table class="table table-bordered table-hover text-center align-middle">
     <thead class="table-primary">
@@ -47,12 +47,10 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <td><?= $p['stock'] ?></td>
           <td><?= ucfirst($p['categoria']) ?></td>
           <td>
-            <a href="editar_producto.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-warning">✏️ Editar</a>
+            <a onclick="loadContent('./editar_producto.php?id=<?= $p['id'] ?>')" class="btn btn-sm btn-warning">✏️ Editar</a>
             <a href="eliminar_producto.php?id=<?= $p['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('¿Eliminar este producto?')">🗑️ Eliminar</a>
           </td>
         </tr>
       <?php endforeach; ?>
     </tbody>
   </table>
-</body>
-</html>
