@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $clave = $_POST['clave'];
 
     // CORREGIDO: puerto 3309 incluido
-    $pdo = new PDO("mysql:host=localhost;port=3309;dbname=carritosupermercado;charset=utf8", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=supercoromoto;charset=utf8", "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");

@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Ruta base absoluta
-$BASE = '/crudsupercoro';
+$BASE = '/supermercadocoromoto';
 ?>
 
 <!DOCTYPE html>
