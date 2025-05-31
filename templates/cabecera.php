@@ -61,6 +61,6 @@ $BASE = '/supermercadocoromoto';
                     <li><a href="<?= $BASE ?>/PHP/licores.php">Licores</a></li>
                 </ul>
             </li>
-            <li><a href="<?= $BASE ?>/PHP/contacto.html" target="_blank">Contáctanos</a></li>
+            <li><a href="<?= $BASE ?>/contacto/contacto.html" target="_blank">Contáctanos</a></li>
         </ul>
     </nav>
