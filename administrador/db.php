@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbname = "supercoromoto";
 $user = "root";
-$pass = "";
+$pass = ""; // Asegúrate de que el puerto sea correcto, por defecto es 3306
 
 
 try {

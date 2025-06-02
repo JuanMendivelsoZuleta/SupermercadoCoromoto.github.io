@@ -1,6 +1,5 @@
 <?php include('./templates/cabecera.php'); ?>
 
-    <!-- BLOQUE DE BIENVENIDA -->
     <section class="bienvenida">
         <h1 class="titulo-bienvenida">¡BIENVENIDOS AL SUPERMERCADO COROMOTO!</h1>
         <h2 class="subtitulo-bienvenida">

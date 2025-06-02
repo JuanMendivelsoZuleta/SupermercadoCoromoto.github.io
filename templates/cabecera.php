@@ -3,7 +3,6 @@ include(__DIR__ . '/../administrador/db.php');
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
 // Ruta base absoluta
 $BASE = '/supermercadocoromoto';
 ?>
@@ -12,16 +11,12 @@ $BASE = '/supermercadocoromoto';
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermercado Coromoto</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="<?= $BASE ?>/css/styles.css">
-
-    <!-- Iconos -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/4ed7a0ea78.js" crossorigin="anonymous"></script>
 </head>
 <body>
