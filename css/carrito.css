@@ -1,0 +1,66 @@
+/* Estilos específicos para el carrito de compras */
+
+/* Transiciones para elementos del carrito */
+.carrito-item {
+    transition: all 0.3s ease;
+}
+
+.carrito-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Imagen del producto en el carrito */
+.producto-imagen {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Controles de cantidad */
+.cantidad-control {
+    width: 120px;
+}
+
+.btn-cantidad {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    background: white;
+    color: #495057;
+    transition: all 0.2s ease;
+}
+
+.btn-cantidad:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.btn-cantidad:active {
+    background-color: #dee2e6;
+}
+
+/* Input de cantidad */
+.input-cantidad {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.input-cantidad:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    transition: all 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.1);
+} 

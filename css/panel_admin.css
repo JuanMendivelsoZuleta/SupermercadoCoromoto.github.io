@@ -1,0 +1,137 @@
+
+/* Reset básico para el panel de administrador */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #f8f9fa !important;
+    line-height: 1.6 !important;
+    padding-top: 0 !important; /* Sobrescribir el padding-top del styles.css */
+}
+/* Header del panel */
+header {
+    background-color: #007bff !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    height: auto !important; /* Sobrescribir altura fija del styles.css */
+    backdrop-filter: none !important; /* Eliminar efecto de blur */
+    border-bottom: none !important; /* Eliminar borde inferior */
+}
+
+header img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Layout principal */
+.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.col-12, .col-md-3, .col-md-9, .col-lg-2, .col-lg-10 {
+    padding: 0 !important;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    border-right: 1px solid #dee2e6 !important;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1) !important;
+    min-height: calc(100vh - 60px) !important; /* Altura total menos header */
+    position: relative !important; /* Sobrescribir position fixed del styles.css */
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+}
+
+.sidebar h4 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Botones del sidebar */
+.sidebar .btn {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 60px);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+.card-header {
+    border-bottom: none;
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Tablas */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    main {
+        min-height: auto;
+    }
+}

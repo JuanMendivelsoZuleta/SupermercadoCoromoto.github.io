@@ -1,0 +1,98 @@
+/* Estilos específicos para la página de detalle de categoría */
+
+/* Gradiente del header */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+/* Contenedor de imagen de categoría */
+.categoria-header-icon {
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Contenedor de imagen del producto */
+.product-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+/* Badges de estado del producto */
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+.product-badge-out-of-stock {
+    background-color: #dc3545;
+}
+
+.product-badge-low-stock {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Título y precio del producto */
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    color: #28a745;
+}
+
+/* Efecto hover para tarjetas */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+} 
